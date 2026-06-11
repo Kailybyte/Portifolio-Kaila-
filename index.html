@@ -1,5 +1,6 @@
 
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,18 +10,25 @@
     
     <!--CSS-->
     <link rel = "stylesheet" href="style.css">
+
+    
 </head>
 <body>
 
+    <!--------------- HEADER-------------->
 
     <div class="container">
+        <nav id = "header"> <!--Stylizing header for cs/js-->
 
-        <nav id = "header"> 
             <div class = "nav-logo">
                 <p class="nav-Logoname">Kaila Portfolio</p>
                 <span>.</span>
+            
             </div>
-            <div class="nav-menu" id="NavMenu">
+
+            <!--Navigation menu-->
+            <!--Home, About, Projects, Contact links-->
+            <div class="nav-menu" id="NavMenu"> <!--Stylizing NavMenu for cs/js-->
                 <ul class="nav-menu-list">
 
                    <li class="nav-lists"> 
@@ -45,21 +53,27 @@
 
                 </ul>
             </div>
+
+            <!--Hamburger Menu-->
             <div class="nav-menu-btn">
                 <i class="fa-solid fa-bars" onclick="AdjustMenu()"></i>
             </div>
         </nav>
 
+    
+
+
+        <!--------------- HOME ------------>
         <main class="Wrap">
              <div class = "Cloud-Img-Group">
                     <div class="Img-1">
                         <img src = "/Home_Page_Img/Group 1.png" alt ="">
                     </div>
                 </div>
-            <section class="Home-Box" id="Home"> 
-                <div class="Home-Text"> 
+            <section class="Home-Box" id="Home"> <!--Featured-box-->
+                <div class="Home-Text"> <!--Featured-text-->
                     
-                    <div class="Home-Program-Design"> 
+                    <div class="Home-Program-Design"> <!--featured-name-->
                         <p> I'm a <span class="Typted-Text">Tech-Support</span></p>
                     </div>
                     <div class="Home-Text-Info">
@@ -85,7 +99,7 @@
                         
                     </div>
                 </div>
-                <div class="Home-Headshot-image"> 
+                <div class="Home-Headshot-image"> <!--Featured-image-->
                     <div class="Image">
                         <img src="kailafoto.png" alt="avatar-img">
                     </div>
@@ -95,6 +109,7 @@
                 
             </section>
 
+            <!------------- ABOUT------------->
             <section class="About-Section" id="About">
                 <div class="Top-header">
                     <h1>About</h1>
@@ -114,6 +129,7 @@
                         
                     </div>
                     <div class="col">
+                        <!-- Skills Box -->
                         <div class="Skills-Box">
                             <div class="Skills-Main-Header">
                                 <h3>Front-end</h3>
@@ -127,6 +143,7 @@
                             </div>
                             
                         </div>
+                        <!-- Add other skills boxes here -->
 
                         <div class="Skills-Box">
                             <div class="Skills-Main-Header">
@@ -165,6 +182,7 @@
             
             </section>
 
+            <!-- ----- PROJECT --------->
             <section class="section" id="Projects">
                 <div class="Top-header">
                     <h1>Projects</h1>
@@ -175,25 +193,28 @@
                         <i class="fa-solid fa-code"></i>
                         <h3>Coding</h3>
                         <label>Finished Programs</label>
+                        <!--<button class="Info-button"> More Info</button> -->
                     </a>
                     </div>
                
 
                 
                     <div class="project-box">
-                        <a href="https://www.linkedin.com/in/kaila-camila-2417b6157/?skipRedirect=true"> 
+                        <a href="https://www.linkedin.com/in/kaila-camila-2417b6157/?skipRedirect=true"> <!--Contact link here-->
                         <i class="fa-brands fa-linkedin"></i>
                         <h3>Contact</h3>
                         <label>Linkedin Info</label>
+                  <!-- </a> --> 
                     </div>
                
 
                     <style>
+                        /* Style the anchor element to remove underline */
                         a {
                             text-decoration: none;
                         }
                         a:visited {
-                            color: inherit; 
+                            color: inherit; /* Use the same color as the regular text */
                         }
                     </style>
                
@@ -227,13 +248,16 @@
          
     </div>
         
+        
 
 
+    <!--Typing Js Link-->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-
+    <!-- Scroll reveal JS link-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
+   <!-- JS-->
     <script src = "script.js"></script>
 </body>
 </html>
