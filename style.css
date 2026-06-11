@@ -1,8 +1,7 @@
-/*---- POPPINS FONT LINNK ----------- */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-/* COLOR VARIABLES */
 :root{
     --body-color: #F4F1EB ;
     --color-white:rgb(255,255,255) ;
@@ -18,7 +17,6 @@
     --first-shadow-color: rgba(0,0,0,0.1);
 }
 
-/*------------ BASE ---------------*/
 *{
     margin: 0;
     padding: 0;
@@ -26,15 +24,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* -------- SCROLL BEHAVIOR ---------- */
 html{
     scroll-behavior: smooth;
 }
 
 
-
-
-/* -------- BASE ---------- */
 body{
     background: var(--body-color);
 }
@@ -44,32 +38,28 @@ body{
     position: relative;
 }
 
-/* ------- NAVIGATION ---------*/
 nav{
-    position: fixed; /* Position will stay in place */
+    position: fixed; 
     display: flex;
     justify-content: space-between;
     width:100%; 
     height:90px;
     line-height: 90px;
-    background-color: #F4F1EB;
+    background-color: #f3e2c0;
     padding-inline: 9vw;
     transition: .3s;
     z-index: 100;
 }
-/* Logo position */
 .nav-logo{
     position:relative;
 }
 
-/*Logo name font size */
 .nav-Logoname{
     font-size: 30px;
     font-size: 600;
     color:var(--text-color-third);
 }
 
-/*Spacing the logo */
 .nav-logo span{
     position: absolute;
     top:-15px;
@@ -78,46 +68,38 @@ nav{
     color:var(--text-color-second);
 }
 
-/* Positioning the nav menu and link */
 .nav-menu .nav-menu-list{
     display:flex;
 }
 
 .nav-menu .nav-lists{
-    list-style: none; /* Lists style has no position */
+    list-style: none; 
     position: relative;
 }
 
 .nav-link{
-    text-decoration: none; /* No decoration added */
+    text-decoration: none; 
     color:var(--text-color-second);
     font-weight: 500;
-    padding-inline:20px; /*Padding of the nav */
+    padding-inline:20px; 
 }
 
 
 
-/* ---- HAMBURGER MENU ------- */
 
-/* Positioning the nav menu buttons */
 .nav-menu-btn{
-    display: none; /* none as a substitute? */
+    display: none; 
     
 }
 
 .nav-menu-btn i{
-    font-size: 28px; /* Might chnage later */
+    font-size: 28px; 
     cursor: pointer;
 }
 
 .nav-lists.active a {
-    color:red; /* desired color for the active state */;
+    color:red; 
 }
-
-
-
-
-/* HOME MENU ------ */
 
 
 /* HOME MENU */
@@ -142,16 +124,10 @@ nav{
 } 
 
 
-/*Wrap class (Towards the home/nav menu)*/
 .Wrap{
-    padding-inline: 10vw; /* Tsting the headerShadow with this, using vh */
+    padding-inline: 10vw; 
 }
 
-
-
-
-
-/* Program / Design Test typed */
 .Home-Program-Design{
     font-size: 50px;
     font-weight: 600;
@@ -165,10 +141,6 @@ nav{
     color:var(--text-color-third);
 }
 
-/* ---- */
-
-
-/* Info about me and resume btn */
 
 .Home-Text-Info{
     font-size: 19px;
@@ -184,23 +156,20 @@ nav{
 
 }
 
-/* Button color and shaping */ 
 .Home-Text-btn .btn-blue {
-    padding: 10px 15px; /* Increase padding to make the button bigger */
-    font-size: 15px; /* Increase font size for better readability */
-    border-radius: 10px; /* Optional: Add border radius for rounded corners */
+    padding: 10px 15px; 
+    font-size: 15px;
+    border-radius: 10px;
     border: 2px solid var(--first-color);
     color: var(--color-white);
     background: var(--first-color);
 }
 
 
-/* Hover for button */
 .Home-Text-btn .btn-blue:hover{
     cursor: pointer;
 }
 
-/* Social me icons */
 .Social-Media-Icons{
     
     display: flex;
@@ -225,10 +194,6 @@ nav{
 }
 
 
-/* ------ */
-
-
-/* Home img-Headshot */
 .Home-Headshot-image{
     display: flex;
     justify-content: right;
@@ -252,12 +217,12 @@ nav{
     object-fit: cover;
 }
 
-/* -------------CLOUD IMG------------ */
+
 .Cloud-Img-Group {
     position:absolute;
     bottom:0;
     right: 0;
-    z-index: -1; /* Change later */
+    z-index: -1; 
     
 }  
 
@@ -269,10 +234,7 @@ nav{
     margin-left:auto;
    
 }
-/* ------------ */
 
-
-/*--- ABOUT ----- */
 .section{
     padding-block: 5em;
 }
@@ -287,7 +249,6 @@ nav{
     width: 50%;
 }
 
-/*--- REUSBALE CSS */
 .Top-header{
     text-align:center;
     padding:10px;
@@ -319,13 +280,12 @@ h3{
     display: flex;
     align-items:center;
     flex-direction: column;
-    padding-block: 30px; /* 30px , 70 was here but chnaged */
+    padding-block: 30px; 
     padding-inline:20px;
     width:100%;
     background: var(--color-white);
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     border-radius: 20px;
-    /*border: 2px solid #723544; */
     
 }
 
@@ -342,9 +302,6 @@ h3{
     font-weight: bold;
     color:#777;
 }
-
-
-/* ---- ABOUT / SKILLS BOX ----- */
 
 
 .Skills-Box{
@@ -373,9 +330,6 @@ h3{
 }
 
 
-
-/* ---- PROJECT SECTION ----- */
-
 .section{
     padding-block: 10em;
 }
@@ -403,7 +357,6 @@ h3{
     border-radius: 20px;
     box-shadow: 1px 8px 10px 2px rgba(9, 9, 4, 0.1);
     
-    /*border: 2px solid #723544; */
 }
 
 .project-box label{
@@ -412,18 +365,16 @@ h3{
 }
 
 .project-box {
-    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
-    text-decoration: none; /* Remove default underline */
-    color: inherit; /* Inherit text color */
+    cursor: pointer; 
+    text-decoration: none; 
+    color: inherit; 
 }
 
 
-/* --- INFO BUTTON ---- */
 
-/* MIGHT NOT USE */
 .Info-button {
-    margin-top: 10px; /* Adjust this value to move the button down as needed */
-    padding: 5px ; /* Adjust the padding to increase button size */
+    margin-top: 10px;
+    padding: 5px ; 
     font-size: 15px;
     border-radius: 7% solid #2B77A4;
     transition: background-color 0.3s ease;
@@ -434,11 +385,9 @@ h3{
     color:white;
    
 }
-/* ------ */
 
-/* ICON COLOR */
 .project-box .fa-solid {
-    color: #723544; /* Change the color of the icons to blue */
+    color: #723544; 
     
 }
 
@@ -454,16 +403,14 @@ h3{
 }
 
 
-
-/* ---- FOOTER --- */
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background: #F4F1EB;
-    padding: 30px 0; /* Adjust the top and bottom padding as needed */
-    margin-top: 90px; /* Adjust the margin to match the section */
+    padding: 30px 0; 
+    margin-top: 90px; 
 }
 
 .top-footer p {
@@ -483,10 +430,9 @@ footer {
     text-decoration: none;
     color: var(--text-color-second);
     font-weight: 500;
-    /*margin-inline: 20px; */
+ 
 }
 
-/* FOOTER ICONS */
 .footer-social-icons {
     display: flex;
     gap: 30px;
@@ -498,16 +444,6 @@ footer {
 }
 
 
-
-
-
-
-
-
-
-
-/* ------ MEDIA QUERY (900PX) RESPONSIVE VIEW ------ */
-/* Media query for screens with a maximum width of 900px */
 @media only screen and (max-width: 900px) {
     nav {
         padding-inline: 5vw;
@@ -529,10 +465,10 @@ footer {
         top: 70px;
         left: 0;
         width: 100%;
-        background-color: #F4F1EB;
+        background-color: #a8843b;
         z-index: 10;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        display: none; /* Initially hide the menu */
+        display: none; 
     }
 
     .nav-menu.active .nav-menu-list {

@@ -1,16 +1,10 @@
-// JavaScript function to toggle the active class on the nav-menu
 function adjustMenu() {
     var navMenu = document.getElementById("NavMenu");
     navMenu.classList.toggle("active");
 }
 
-// Event listener for the menu button click
 document.querySelector(".nav-menu-btn").addEventListener("click", adjustMenu);
 
-
-
-
-/* ---- SHADOW ON NAVIGATION WHILE SCROLLING ---- */
 
 window.onscroll = function() {
     headerShadow();
@@ -30,7 +24,6 @@ function headerShadow() {
 }
 
 
-/* ----- TYPING EFFECT ----- */
 var typingEffect = new Typed(".Typted-Text",{
     strings : ["Programmer", "Tech-Support"],
     loop: true,
@@ -40,14 +33,12 @@ var typingEffect = new Typed(".Typted-Text",{
 })
 
 
-/* ---- SCROLL REVEL ANIMATION -----*/
 const scrollNav = ScrollReveal({
     origin: 'top',
     distance: '80px',
     reset: true
 })
 
-/* --- HOME REVAL ANIMATION-- */
 scrollNav.reveal('.Home-Program-Design') 
 scrollNav.reveal('.Home-Text-Info'); 
 scrollNav.reveal('.Home-Text-btn');
@@ -55,10 +46,8 @@ scrollNav.reveal('.Social-Media-Icons');
 scrollNav.reveal('.Home-Headshot-image');
 
 
-// ---- PROJECT REVEAL ANIMATION --- */
 scrollNav.reveal('.project-box',{interval: 200})
 
-// ----- MAIN HEADER REVEAL 
 scrollNav.reveal('.Top-header',{interval: 200})
 
 scrollNav.reveal('.about-Info',{interval:200})
@@ -66,7 +55,6 @@ scrollNav.reveal('.about-Info',{interval:200})
 scrollNav.reveal('.Skills-Box',{interval:200})
 
 
-//FOOTER REAVEL ANIMATION 
 scrollNav.reveal('.top-footer',{interval:200})
 scrollNav.reveal('.middle-footer',{interval:200})
 scrollNav.reveal('.footer-social-icons',{interval:200})
