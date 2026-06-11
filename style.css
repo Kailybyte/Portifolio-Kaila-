@@ -472,7 +472,7 @@ footer {
     }
 
     .nav-menu.active .nav-menu-list {
-        display: flex; /* Show the menu when .active is applied */
+        display: flex; 
     }
 
     .nav-lists {
@@ -493,10 +493,9 @@ footer {
 
     .nav-lists{
         position: relative;
-        left: -20px /* Chnage navlist in responsive view */
+        left: -20px 
     }
 
-    /* Trying to chnage the direction of the headshot, Test, and icons */
     .Home-Box{
         flex-direction: column;
         justify-content: center;
@@ -524,7 +523,6 @@ footer {
         height: 150px;
     }
 
-    /* ABOUT INFO */
     .row{
         display:flex;
         flex-direction: column;
@@ -549,14 +547,12 @@ footer {
     width:80%;
    }
 
-    /* SKILS BOX */
     .Skills-Box {
         margin: 15px;
-        width: calc(50% - 90px); /* Set the width to occupy 50% of the column width minus the margin */
-        max-width: 600px; /* Set a maximum width to prevent excessive stretching */
+        width: calc(50% - 90px); 
+        max-width: 600px; 
     }
 
-    /* PROJECTS */
     .project-container{
         justify-content: center;
     }
@@ -569,7 +565,6 @@ footer {
 }
 
 
-
 @media only screen and (max-width: 540px){
     
     .project-box{
@@ -579,7 +574,6 @@ footer {
   
 }
 
-/* Home and humaburger responsive */
 @media only screen and (max-width: 1024px) {
     .Home-Text{
         padding:0;
@@ -600,76 +594,58 @@ footer {
             padding:0;
         }
 
-        /* Changing hamburger repsonsiive */
      .nav-menu-btn{
         position: relative; 
-        left: -70px; /* adjust this value as needed */
+        left: -70px; 
      }   
     
 }
 
-
-
-
-
-
-/*-------------FIX UPS AND CHNAGES------- */
-
-
-/* OPACITY FOR CLOUD AND LEAF FEILD IMG */
 @media screen and (max-width: 768px) {
     .Cloud-Img-Group .Img-1 img {
-        opacity: 0.5; /* Reduce opacity for smaller screens */
+        opacity: 0.5; 
         
     }
 }
 
     @media screen and (max-width: 768px) {
         .Leaf-Field-Container img {
-            opacity: 0.5; /* Reduce opacity for smaller screen for leak img  */
+            opacity: 0.5; 
             
         }
     
 }
-
-
-
-/**SOCIAL MEDIA */
 .Social-Media-Icons {
     position: relative;
     z-index: 1;
 }
 
-/* Style the icons */
+
 .Icon {
     display: inline-block;
     margin-right: 10px;
     cursor: pointer;
 }
 
-/* Add hover effect */
+
 .Icon:hover {
-    color: blue; /* Change color as desired */
+    color: blue; 
 }
 
-/* Responsive styles */
 @media screen and (max-width: 768px) {
-    /* Adjust styles for smaller screens */
     .Social-Media-Icons {
         display: flex;
         justify-content: center;
     }
 }
 
-/**SKILLS LEAF FIELD BG */
-
 .Leaf-Field-Container img {
-    width: 120%; /* Adjust this value as needed */
-    height: auto; /* This ensures the height scales proportionally */
+    width: 120%; 
+    height: auto; 
 }
 
 
-/**PROJECT RECTANGLE BG */
+
 #Projects {
     display: flex;
     flex-direction: column;
@@ -677,61 +653,43 @@ footer {
 }
 
 .project-container {
-    position: relative; /* Ensure it's relative so the absolute positioning inside it works */
+    position: relative; 
 }
 
 
-
-
-/* LEAF SOLOR ABOUT */
 .About-Section {
-    position: relative; /* Position relative to its containing element */
+    position: relative; 
 }
 
 .Leaf-solo {
-    position: absolute; /* Position the leaf absolutely */
-    top: 0; /* Position the leaf at the top of the about section */
-    left: 0%; /* Position it horizontally at the center */
-    transform: translateX(-50%); /* Center it horizontally */
-    z-index: 1; /* Ensure it's above other content */
+    position: absolute; 
+    top: 0; 
+    left: 0%; 
+    transform: translateX(-50%); 
+    z-index: 1; 
 }
 
 .Leaf-solo img {
-    width: 150px; /* Adjust the width of the leaf as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 150px; 
+    height: auto; 
 }
 
 
-
-
-
-/* RECTANGLE UNDERNEATH EXPERIENCE */
 .About-Section {
     position: relative;
 }
 
-
-
-
-
-
-
-/* FIELD IMG PROJECT  PAGE  */
 .Field-Project img{
  margin-top: 20px;
  
  height:auto;
 }
 
-
-/* NAV HOVER */
-
 .nav-link:hover{
-    color: #723544; /* Change this to your desired color */
+    color: #723544; 
 }
 
 
-/* CONTACT PAGE LEAF FIELD 2 */
 .Leaf-Field-2 img {
     width: 100%;
     height: auto;
@@ -742,25 +700,24 @@ footer {
     background-color: #FFFFFF;
 }
 
-/* FOOTER PADDING AND FONT SIZE MEDIA RESPONSIVE */
 @media screen and (max-width: 768px){
     footer {
-        padding: 4px; /* Adjust padding for smaller screens */
+        padding: 4px; 
     }
 
     .top-footer p {
-        font-size: 28px; /* Decrease font size for smaller screens */
+        font-size: 28px; 
     }
 
     .bottom-footer {
-        font-size: 14px; /* Decrease font size for smaller screens */
+        font-size: 14px; 
     }
 }
 
 
 @media screen and (max-width: 540px){
     footer {
-        padding: 4px; /* Adjust padding for smaller screens */
+        padding: 4px;
     }
 
     .top-footer p {
@@ -768,7 +725,7 @@ footer {
     }
 
     .bottom-footer {
-        font-size: 14px; /* Decrease font size for smaller screens */
+        font-size: 14px; 
     }
 
     .footer-social-icons{
@@ -776,10 +733,6 @@ footer {
         margin-top: 20px; 
     }
 }
-
-
-
-
 
 
 
@@ -791,8 +744,8 @@ footer {
     }
 
     .icon {
-        margin-right: 0; /* Remove horizontal margin */
-        margin-bottom: 10px; /* Add vertical margin */
+        margin-right: 0; 
+        margin-bottom: 10px; 
     }
 }
 
@@ -804,7 +757,7 @@ footer {
     }
 
     .icon {
-        margin-right: 0; /* Remove horizontal margin */
-        margin-bottom: 10px; /* Add vertical margin */
+        margin-right: 0; 
+        margin-bottom: 10px; 
     }
 }
