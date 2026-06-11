@@ -1,0 +1,264 @@
+<!--README: I did alot of reasearch on portfolio's but I really liked the look and feel of a fellow developers portfolio named Ludiflex. I was heavily insprired by their portfolio to make it the way I did. Even though I hand designed and programed it myself, I wanted too give Ludiflex credit for giving me the inspriation for making this portfolio-->
+<!--Link too his page: https://www.ludiflex.com/author/kyyd/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!--cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!--CSS-->
+    <link rel = "stylesheet" href="style.css">
+
+    
+</head>
+<body>
+
+    <!--------------- HEADER-------------->
+
+    <div class="container">
+        <nav id = "header"> <!--Stylizing header for cs/js-->
+
+            <div class = "nav-logo">
+                <p class="nav-Logoname">Kaila Portfolio</p>
+                <span>.</span>
+            
+            </div>
+
+            <!--Navigation menu-->
+            <!--Home, About, Projects, Contact links-->
+            <div class="nav-menu" id="NavMenu"> <!--Stylizing NavMenu for cs/js-->
+                <ul class="nav-menu-list">
+
+                   <li class="nav-lists"> 
+                        <a href="#Home" class="nav-link">Home</a>
+                        <div class="circle"></div>
+                   </li>
+
+                   <li class="nav-lists">
+                    <a href="#About" class="nav-link">About</a>
+                    <div class="circle"></div>
+                    </li>
+
+                    <li class="nav-lists">
+                        <a href="#Projects" class="nav-link">Projects</a>
+                        <div class="circle"></div>
+                    </li>
+                    
+                    <li class="nav-lists">
+                        <a href="#ContactMe" class="nav-link">Contact</a>
+                        <div class="circle"></div>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!--Hamburger Menu-->
+            <div class="nav-menu-btn">
+                <i class="fa-solid fa-bars" onclick="AdjustMenu()"></i>
+            </div>
+        </nav>
+
+    
+
+
+        <!--------------- HOME ------------>
+        <main class="Wrap">
+             <div class = "Cloud-Img-Group">
+                    <div class="Img-1">
+                        <img src = "/Home_Page_Img/Group 1.png" alt ="">
+                    </div>
+                </div>
+            <section class="Home-Box" id="Home"> <!--Featured-box-->
+                <div class="Home-Text"> <!--Featured-text-->
+                    
+                    <div class="Home-Program-Design"> <!--featured-name-->
+                        <p> I'm a <span class="Typted-Text">Tech-Support</span></p>
+                    </div>
+                    <div class="Home-Text-Info">
+                        <p>
+                            Formada em Análise e Desenvolvimento de Sistemas, transformo desafios em soluções através da tecnologia, da análise de dados e da busca contínua por inovação.
+                        </p>
+                    </div>
+                    <div class="Home-Text-btn">
+                            <a href="Curriculo-Kaila.pdf" download>
+                                <button class="btn-blue">Curriculo</button>
+                            </a>
+                    </div>
+                    
+                    <div class="Social-Media-Icons">
+                       <a href="https://www.linkedin.com/in/kaila-camila-2417b6157/?skipRedirect=true"> <div class ="Icons"><i class="fa-brands fa-linkedin"></i></div></a> <!--Linkldn link-->
+                      
+                        <a href="https://github.com/Kailybyte"> <div class="Icons"><i class="fa-brands fa-github"></i></div></a> <!--Github link-->
+                       
+                      <a href = "https://www.instagram.com/aaaa_kayla/ "> <div class="Icons"><i class="fa-brands fa-instagram"></i></div></a> <!--Youtube link-->
+
+                        <a href="mailto:Kailacamila15@gmail.com "><div class="Icons"><i class="fa-solid fa-envelope"></i></div></a> <!--Email link-->
+
+                        
+                    </div>
+                </div>
+                <div class="Home-Headshot-image"> <!--Featured-image-->
+                    <div class="Image">
+                        <img src="kailafotofundodiferente.png" alt="avatar-img">
+                    </div>
+                </div>
+                
+               
+                
+            </section>
+
+            <!------------- ABOUT------------->
+            <section class="About-Section" id="About">
+                <div class="Top-header">
+                    <h1>About</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <!-- Experience Box -->
+                        <div class="about-Info">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <h3>Education</h3>
+                            <div class="KSU">
+                                <p> Uniamerica </p>
+                            </div>
+                            <p> Análise e Desenvolvimento de Sistemas </p>
+                            <p>(ADS)</p>
+                        </div>
+                        
+                    </div>
+                    <div class="col">
+                        <!-- Skills Box -->
+                        <div class="Skills-Box">
+                            <div class="Skills-Main-Header">
+                                <h3>Front-end</h3>
+                            </div>
+                            <div class="Skills-List">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>AngularJS</span>
+                                <span>VueJS</span>
+                            </div>
+                            
+                        </div>
+                        <!-- Add other skills boxes here -->
+
+                        <div class="Skills-Box">
+                            <div class="Skills-Main-Header">
+                                <h3>Back-end</h3>
+                            </div>
+                            <div class="Skills-List">
+                                <span>Java</span>
+                                <span>Python</span>
+                                <span>SpringBoot</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="Skills-Box">
+                            <div class="Skills-Main-Header">
+                                <h3>Database</h3>
+                            </div>
+                            <div class="Skills-List">
+                                <span>PostgresSQL</span>
+                                <span>Postman</span>
+                                <span>MySQL</span>
+                                <span>MariaDB</span>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="Leaf-solo">
+                    <img src="/About_Page_Img/Solo-Leaf.png" alt = "">
+                </div>
+
+                <div class="Leaf-Field-Container">
+                <img src="/About_Page_Img/Leaf_Field.png" alt="">
+                </div>
+            
+            </section>
+
+            <!-- ----- PROJECT --------->
+            <section class="section" id="Projects">
+                <div class="Top-header">
+                    <h1>Projects</h1>
+                </div>
+                <div class="project-container">
+                    <a href="https://github.com/Kailybyte/BlackCatBack">
+                    <div class="project-box">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Coding</h3>
+                        <label>Finished Programs</label>
+                        <!--<button class="Info-button"> More Info</button> -->
+                    </a>
+                    </div>
+               
+
+                
+                    <div class="project-box">
+                        <a href="https://www.linkedin.com/in/kaila-camila-2417b6157/?skipRedirect=true"> <!--Contact link here-->
+                        <i class="fa-brands fa-linkedin"></i>
+                        <h3>Contact</h3>
+                        <label>Linkedin Info</label>
+                  <!-- </a> --> 
+                    </div>
+               
+
+                    <style>
+                        /* Style the anchor element to remove underline */
+                        a {
+                            text-decoration: none;
+                        }
+                        a:visited {
+                            color: inherit; /* Use the same color as the regular text */
+                        }
+                    </style>
+               
+                </div>
+
+                
+            </div>
+            </section>
+        </main>
+
+            
+        
+        <!-- --------- FOOTER -------------->
+
+      
+        <footer>
+            <div class="top-footer" id = "ContactMe">
+                <p>Kaila Camila</p>
+            </div>
+           
+            <div class="footer-social-icons">
+                    <a href="https://www.linkedin.com/in/kaila-camila-2417b6157/?skipRedirect=true"> <div class ="Icons"><i class="fa-brands fa-linkedin"></i></div></a> <!--Linldln link-->
+
+
+                       <a href="https://github.com/Kailybyte"> <div class="Icons"><i class="fa-brands fa-github"></i></div></a> <!--Github link-->
+
+                       <a href = "https://www.instagram.com/aaaa_kayla/"> <div class="Icons"><i class="fa-brands fa-instagram"></i></div></a> <!--Youtube link-->
+
+                        <a href="mailto:Kailacamila15@gmail.com"><div class="Icons"><i class="fa-solid fa-envelope"></i></div></a> <!--Email link-->
+            </div>
+         
+    </div>
+        
+        
+
+
+    <!--Typing Js Link-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Scroll reveal JS link-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+   <!-- JS-->
+    <script src = "script.js"></script>
+</body>
+</html>

@@ -1,0 +1,857 @@
+/*---- POPPINS FONT LINNK ----------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* COLOR VARIABLES */
+:root{
+    --body-color: #F4F1EB ;
+    --color-white:rgb(255,255,255) ;
+
+    --text-color-second: rgb(68,68,68) ;
+    --text-color-third:#723544;
+
+    --first-color:#2B77A4 ;
+    
+
+    --second-color: rgb(0, 201, 255);
+    
+    --first-shadow-color: rgba(0,0,0,0.1);
+}
+
+/*------------ BASE ---------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* -------- SCROLL BEHAVIOR ---------- */
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+/* -------- BASE ---------- */
+body{
+    background: var(--body-color);
+}
+
+.container{
+    width:100%;
+    position: relative;
+}
+
+/* ------- NAVIGATION ---------*/
+nav{
+    position: fixed; /* Position will stay in place */
+    display: flex;
+    justify-content: space-between;
+    width:100%; 
+    height:90px;
+    line-height: 90px;
+    background-color: #F4F1EB;
+    padding-inline: 9vw;
+    transition: .3s;
+    z-index: 100;
+}
+/* Logo position */
+.nav-logo{
+    position:relative;
+}
+
+/*Logo name font size */
+.nav-Logoname{
+    font-size: 30px;
+    font-size: 600;
+    color:var(--text-color-third);
+}
+
+/*Spacing the logo */
+.nav-logo span{
+    position: absolute;
+    top:-15px;
+    right: -20px;
+    font-size: 5rem;
+    color:var(--text-color-second);
+}
+
+/* Positioning the nav menu and link */
+.nav-menu .nav-menu-list{
+    display:flex;
+}
+
+.nav-menu .nav-lists{
+    list-style: none; /* Lists style has no position */
+    position: relative;
+}
+
+.nav-link{
+    text-decoration: none; /* No decoration added */
+    color:var(--text-color-second);
+    font-weight: 500;
+    padding-inline:20px; /*Padding of the nav */
+}
+
+
+
+/* ---- HAMBURGER MENU ------- */
+
+/* Positioning the nav menu buttons */
+.nav-menu-btn{
+    display: none; /* none as a substitute? */
+    
+}
+
+.nav-menu-btn i{
+    font-size: 28px; /* Might chnage later */
+    cursor: pointer;
+}
+
+.nav-lists.active a {
+    color:red; /* desired color for the active state */;
+}
+
+
+
+
+/* HOME MENU ------ */
+
+
+/* HOME MENU */
+.Home-Box, .Home-Text {
+    position: relative;
+}
+
+.Home-Box {
+    display: flex;
+    height: 100vh;
+    min-height: 700px; 
+} 
+
+.Home-Text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    flex-direction: column;
+    width: 50%; 
+    padding-left: 20px;
+} 
+
+
+.Wrap{
+    padding-inline: 10vw; 
+}
+
+
+.Home-Program-Design{
+    font-size: 50px;
+    font-weight: 600;
+    color:var(--text-color-second);
+    margin-block: 20px;
+}
+
+
+.Typted-Text{
+    text-transform: capitalize;
+    color:var(--text-color-third);
+}
+
+.Home-Text-Info{
+    font-size: 19px;
+    margin-bottom: 20px;
+    color:var(--text-color-second);
+    text-align: center;
+    
+}
+
+.Home-Text-btn{
+    display:flex;
+    gap:20px;
+
+}
+
+.Home-Text-btn .btn-blue {
+    padding: 10px 15px; 
+    font-size: 15px; 
+    border-radius: 10px; 
+    border: 2px solid var(--first-color);
+    color: var(--color-white);
+    background: var(--first-color);
+}
+
+
+.Home-Text-btn .btn-blue:hover{
+    cursor: pointer;
+}
+
+.Social-Media-Icons{
+    
+    display: flex;
+    margin-top: 2rem;
+    gap: 30px;
+    
+}
+
+.Icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    color:#723544;
+}
+.Icons:hover{
+    color:var(--first-color);
+}
+
+
+.Home-Headshot-image{
+    display: flex;
+    justify-content: right;
+    align-content: center;
+    min-height: 60vh;
+    width:50%;
+}
+
+.Image{
+    margin: auto 0;
+    width:380px;
+    height: 380px;
+    border-radius: 55% 55%;
+    overflow: hidden;
+    
+}
+
+.Image img{
+    width: 380px;
+    height:380px;
+    object-fit: cover;
+}
+
+/* -------------CLOUD IMG------------ */
+.Cloud-Img-Group {
+    position:absolute;
+    bottom:0;
+    right: 0;
+    z-index: -1; /* Change later */
+    
+}  
+
+
+
+.Cloud-Img-Group .Img-1 img {
+    width:50%;
+    display:block;
+    margin-left:auto;
+   
+}
+/* ------------ */
+
+
+/*--- ABOUT ----- */
+.section{
+    padding-block: 5em;
+}
+.row{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    gap: 50px;
+}
+.col{
+    display:flex;
+    width: 50%;
+}
+
+/*--- REUSBALE CSS */
+.Top-header{
+    text-align:center;
+    padding:10px;
+    margin-bottom: 4em;
+}
+
+.Top-header h1{
+    font-weight: 600;
+    font-size: 30px;
+    color:var(--text-color-second);
+   
+}
+
+.Top-header span{
+    color: #723544;
+}
+.fa-graduation-cap{
+    color:#723544;
+}
+h3{
+    font-size: 20px;
+    font-weight: 600px;
+    color:var(--text-color-second);
+    margin-bottom: 15px;
+}
+
+.about-Info{
+    position:relative;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    padding-block: 30px; /* 30px , 70 was here but chnaged */
+    padding-inline:20px;
+    width:100%;
+    background: var(--color-white);
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    border-radius: 20px;
+    /*border: 2px solid #723544; */
+    
+}
+
+.about-Info p{
+    text-align: center;
+    font-size: 15px;
+    color:#777;
+    margin: 2px;
+}
+
+.KSU p{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color:#777;
+}
+
+
+/* ---- ABOUT / SKILLS BOX ----- */
+
+
+.Skills-Box{
+    margin: 15px;
+    
+}
+
+.Skills-Main-Header{
+  margin-bottom:30px;
+}
+
+.Skills-List{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    
+    
+}
+
+.Skills-List span{
+    font-size: 14px;
+    background:var(--first-color);
+    color:var(--color-white);
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+
+
+
+/* ---- PROJECT SECTION ----- */
+
+.section{
+    padding-block: 10em;
+}
+
+.project-container{
+    display:flex;
+    width:105%;
+    justify-content: space-between;
+    gap:20px;
+    flex-wrap: wrap;
+    
+}
+
+
+
+.project-box{
+    position: relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    width:30%;
+    height: 250px;
+    background: var(--color-white);
+    border-radius: 20px;
+    box-shadow: 1px 8px 10px 2px rgba(9, 9, 4, 0.1);
+    
+    /*border: 2px solid #723544; */
+}
+
+.project-box label{
+    font-size: 15px;
+    color:#777;
+}
+
+.project-box {
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+    text-decoration: none; /* Remove default underline */
+    color: inherit; /* Inherit text color */
+}
+
+
+/* --- INFO BUTTON ---- */
+
+/* MIGHT NOT USE */
+.Info-button {
+    margin-top: 10px; /* Adjust this value to move the button down as needed */
+    padding: 5px ; /* Adjust the padding to increase button size */
+    font-size: 15px;
+    border-radius: 7% solid #2B77A4;
+    transition: background-color 0.3s ease;
+}
+
+.Info-button:hover{
+    background-color: #2B77A4;
+    color:white;
+   
+}
+/* ------ */
+
+/* ICON COLOR */
+.project-box .fa-solid {
+    color: #723544; /* Change the color of the icons to blue */
+    
+}
+
+.project-box:hover {
+    background-color: #2B77A4;
+}
+
+.project-box:hover h3,
+.project-box:hover label,
+.project-box:hover .Info-button,
+.project-box:hover .fa-solid {
+    color: white;
+}
+
+
+
+/* ---- FOOTER --- */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #F4F1EB;
+    padding: 30px 0; /* Adjust the top and bottom padding as needed */
+    margin-top: 90px; /* Adjust the margin to match the section */
+}
+
+.top-footer p {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.middle-footer .footer {
+    display: flex;
+}
+
+.footer_menu_list {
+    list-style: none;
+}
+
+.footer_menu_list a {
+    text-decoration: none;
+    color: var(--text-color-second);
+    font-weight: 500;
+    /*margin-inline: 20px; */
+}
+
+/* FOOTER ICONS */
+.footer-social-icons {
+    display: flex;
+    gap: 30px;
+}
+
+.bottom-footer {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ------ MEDIA QUERY (900PX) RESPONSIVE VIEW ------ */
+/* Media query for screens with a maximum width of 900px */
+@media only screen and (max-width: 900px) {
+    nav {
+        padding-inline: 5vw;
+        
+    }
+
+    .nav-logo .nav-Logoname {
+        font-size: 24px;
+    }
+
+    .nav-logo span {
+        font-size: 3rem;
+    }
+
+    .nav-menu .nav-menu-list {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #F4F1EB;
+        z-index: 10;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: none; /* Initially hide the menu */
+    }
+
+    .nav-menu.active .nav-menu-list {
+        display: flex; /* Show the menu when .active is applied */
+    }
+
+    .nav-lists {
+        width: 100%;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 5px 20px;
+        text-align: center;
+        
+    }
+
+    .nav-menu-btn {
+        display: block;
+      
+    }
+
+    .nav-lists{
+        position: relative;
+        left: -20px /* Chnage navlist in responsive view */
+    }
+
+    /* Trying to chnage the direction of the headshot, Test, and icons */
+    .Home-Box{
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+    .Home-Text{
+        width:100%;
+        order: 2;
+        justify-content: center;
+        align-content: flex-start;
+        min-height: 60vh;
+    }
+    .Social-Media-Icons{
+        margin-top:2em;
+    }
+    .Home-Headshot-image{
+        order:1;
+        justify-content: center;
+        min-height: 150px;
+        width:100%;
+        margin-top: 65px;
+    }
+    .Image, .Image img{
+        width: 150px;
+        height: 150px;
+    }
+
+    /* ABOUT INFO */
+    .row{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .col{
+        display: flex;
+        justify-content: center;
+        width:100%;
+    }
+
+   .about-Info{
+    width:100%;
+   }
+
+   .project-container{
+    justify-content: center;
+   }
+   .project-box{
+    width:80%;
+   }
+
+    /* SKILS BOX */
+    .Skills-Box {
+        margin: 15px;
+        width: calc(50% - 90px); /* Set the width to occupy 50% of the column width minus the margin */
+        max-width: 600px; /* Set a maximum width to prevent excessive stretching */
+    }
+
+    /* PROJECTS */
+    .project-container{
+        justify-content: center;
+    }
+    .project-box{
+        width:80%;
+    }
+
+   
+
+}
+
+
+
+@media only screen and (max-width: 540px){
+    
+    .project-box{
+        width: 100%;
+    }
+
+  
+}
+
+/* Home and humaburger responsive */
+@media only screen and (max-width: 1024px) {
+    .Home-Text{
+        padding:0;
+    }
+    .Image, .Image img{
+        width: 260px;
+        height: 260px;
+    }
+        .container{
+            width:auto;
+            margin:0;
+            padding:0;
+        }
+
+        .Wrap {
+            width:auto;
+            margin:0;
+            padding:0;
+        }
+
+        /* Changing hamburger repsonsiive */
+     .nav-menu-btn{
+        position: relative; 
+        left: -70px; /* adjust this value as needed */
+     }   
+    
+}
+
+
+
+
+
+
+/*-------------FIX UPS AND CHNAGES------- */
+
+
+/* OPACITY FOR CLOUD AND LEAF FEILD IMG */
+@media screen and (max-width: 768px) {
+    .Cloud-Img-Group .Img-1 img {
+        opacity: 0.5; /* Reduce opacity for smaller screens */
+        
+    }
+}
+
+    @media screen and (max-width: 768px) {
+        .Leaf-Field-Container img {
+            opacity: 0.5; /* Reduce opacity for smaller screen for leak img  */
+            
+        }
+    
+}
+
+
+
+/**SOCIAL MEDIA */
+.Social-Media-Icons {
+    position: relative;
+    z-index: 1;
+}
+
+/* Style the icons */
+.Icon {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Add hover effect */
+.Icon:hover {
+    color: blue; /* Change color as desired */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .Social-Media-Icons {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/**SKILLS LEAF FIELD BG */
+
+.Leaf-Field-Container img {
+    width: 120%; /* Adjust this value as needed */
+    height: auto; /* This ensures the height scales proportionally */
+}
+
+
+/**PROJECT RECTANGLE BG */
+#Projects {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.project-container {
+    position: relative; /* Ensure it's relative so the absolute positioning inside it works */
+}
+
+
+
+
+/* LEAF SOLOR ABOUT */
+.About-Section {
+    position: relative; /* Position relative to its containing element */
+}
+
+.Leaf-solo {
+    position: absolute; /* Position the leaf absolutely */
+    top: 0; /* Position the leaf at the top of the about section */
+    left: 0%; /* Position it horizontally at the center */
+    transform: translateX(-50%); /* Center it horizontally */
+    z-index: 1; /* Ensure it's above other content */
+}
+
+.Leaf-solo img {
+    width: 150px; /* Adjust the width of the leaf as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+
+
+/* RECTANGLE UNDERNEATH EXPERIENCE */
+.About-Section {
+    position: relative;
+}
+
+
+
+
+
+
+
+/* FIELD IMG PROJECT  PAGE  */
+.Field-Project img{
+ margin-top: 20px;
+ 
+ height:auto;
+}
+
+
+/* NAV HOVER */
+
+.nav-link:hover{
+    color: #723544; /* Change this to your desired color */
+}
+
+
+/* CONTACT PAGE LEAF FIELD 2 */
+.Leaf-Field-2 img {
+    width: 100%;
+    height: auto;
+    margin-bottom: -40px;
+}
+
+.Icons {
+    background-color: #FFFFFF;
+}
+
+/* FOOTER PADDING AND FONT SIZE MEDIA RESPONSIVE */
+@media screen and (max-width: 768px){
+    footer {
+        padding: 4px; /* Adjust padding for smaller screens */
+    }
+
+    .top-footer p {
+        font-size: 28px; /* Decrease font size for smaller screens */
+    }
+
+    .bottom-footer {
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
+}
+
+
+@media screen and (max-width: 540px){
+    footer {
+        padding: 4px; /* Adjust padding for smaller screens */
+    }
+
+    .top-footer p {
+        font-size: 28px; /* Decrease font size for smaller screens */
+    }
+
+    .bottom-footer {
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
+
+    .footer-social-icons{
+        
+        margin-top: 20px; 
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+    .footer-social-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon {
+        margin-right: 0; /* Remove horizontal margin */
+        margin-bottom: 10px; /* Add vertical margin */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-social-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon {
+        margin-right: 0; /* Remove horizontal margin */
+        margin-bottom: 10px; /* Add vertical margin */
+    }
+}
